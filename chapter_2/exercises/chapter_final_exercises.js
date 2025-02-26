@@ -44,3 +44,26 @@ for (let i = 1; i <= 100; i++) {
     console.log(i);
   } 
 }
+
+/* Chessboard
+Write a program that creates a string that represents an 8x8 grid, using new-line characters to separate lines.
+At each position ofthe grid there is either a space or a # character. The characters should form a chessboard.
+When you have a program that generates this pattern, define a binding size = 8 and change the program so that it
+works for any size, outputting a grid of the given wifth and height. 
+*/
+
+let size = 10; 
+let board = "";
+
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 === 0) {
+      board += " ";
+    } else {
+      board += "#";
+    }
+  }
+  board += "\n"; 
+}
+
+console.log(board);
