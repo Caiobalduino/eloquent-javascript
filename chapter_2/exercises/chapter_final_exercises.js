@@ -67,3 +67,9 @@ for (let y = 0; y < size; y++) {
 }
 
 console.log(board);
+
+//Reduced version:
+
+// for (let y = 0; y < size; y++) {
+//   board += (y % 2 ? "# " : " #").repeat(size / 2) + "\n";
+// }
